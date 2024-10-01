@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03DCF4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="177dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/agbalumo"
+        android:text="Help me!"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="130dp" />
+
+    <ImageView
+        android:id="@+id/imageview_egg"
+        android:layout_width="246dp"
+        android:layout_height="354dp"
+        android:onClick="knock"
+        android:contentDescription="egg"
+        app:srcCompat="@drawable/pink_egg"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <TextView
+        android:id="@+id/textview_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="10"
+        android:textSize="48sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="108dp"
+        android:layout_height="57dp"
+        android:onClick="reset"
+        android:text="Reset"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="586dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
